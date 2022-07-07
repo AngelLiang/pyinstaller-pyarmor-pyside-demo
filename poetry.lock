@@ -1,0 +1,417 @@
+[[package]]
+name = "altgraph"
+version = "0.17.2"
+description = "Python graph (network) package"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
+
+[[package]]
+name = "click"
+version = "8.1.3"
+description = "Composable command line interface toolkit"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+colorama = {version = "*", markers = "platform_system == \"Windows\""}
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
+
+[[package]]
+name = "colorama"
+version = "0.4.5"
+description = "Cross-platform colored terminal text."
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
+
+[[package]]
+name = "future"
+version = "0.18.2"
+description = "Clean single-source support for Python 3 and 2"
+category = "main"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
+
+[[package]]
+name = "macholib"
+version = "1.16"
+description = "Mach-O header analysis and editing"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+altgraph = ">=0.15"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
+
+[[package]]
+name = "pefile"
+version = "2022.5.30"
+description = "Python PE parsing module"
+category = "main"
+optional = false
+python-versions = ">=3.6.0"
+
+[package.dependencies]
+future = "*"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
+
+[[package]]
+name = "pyarmor"
+version = "7.5.1"
+description = "A tool used to obfuscate python scripts, bind obfuscated scripts to fixed machine or expire obfuscated scripts."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
+
+[[package]]
+name = "pyinstaller"
+version = "5.1"
+description = "PyInstaller bundles a Python application and all its dependencies into a single package."
+category = "main"
+optional = false
+python-versions = "<3.11,>=3.7"
+
+[package.dependencies]
+altgraph = "*"
+macholib = {version = ">=1.8", markers = "sys_platform == \"darwin\""}
+pefile = {version = ">=2017.8.1", markers = "sys_platform == \"win32\""}
+pyinstaller-hooks-contrib = ">=2021.4"
+pywin32-ctypes = {version = ">=0.2.0", markers = "sys_platform == \"win32\""}
+tinyaes = {version = ">=1.0.0", optional = true, markers = "extra == \"encryption\""}
+
+[package.extras]
+encryption = ["tinyaes (>=1.0.0)"]
+hook_testing = ["pytest (>=2.7.3)", "execnet (>=1.5.0)", "psutil"]
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
+
+[[package]]
+name = "pyinstaller-hooks-contrib"
+version = "2022.7"
+description = "Community maintained hooks for PyInstaller"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
+
+[[package]]
+name = "pyside6"
+version = "6.3.1"
+description = "Python bindings for the Qt cross-platform application and UI framework"
+category = "main"
+optional = false
+python-versions = "<3.11,>=3.6"
+
+[package.dependencies]
+PySide6-Addons = "6.3.1"
+PySide6-Essentials = "6.3.1"
+shiboken6 = "6.3.1"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
+
+[[package]]
+name = "pyside6-addons"
+version = "6.3.1"
+description = "Python bindings for the Qt cross-platform application and UI framework (Addons)"
+category = "main"
+optional = false
+python-versions = "<3.11,>=3.6"
+
+[package.dependencies]
+PySide6-Essentials = "6.3.1"
+shiboken6 = "6.3.1"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
+
+[[package]]
+name = "pyside6-essentials"
+version = "6.3.1"
+description = "Python bindings for the Qt cross-platform application and UI framework (Essentials)"
+category = "main"
+optional = false
+python-versions = "<3.11,>=3.6"
+
+[package.dependencies]
+shiboken6 = "6.3.1"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
+
+[[package]]
+name = "pywin32-ctypes"
+version = "0.2.0"
+description = ""
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
+
+[[package]]
+name = "shiboken6"
+version = "6.3.1"
+description = "Python/C++ bindings helper module"
+category = "main"
+optional = false
+python-versions = "<3.11,>=3.6"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
+
+[[package]]
+name = "six"
+version = "1.16.0"
+description = "Python 2 and 3 compatibility utilities"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
+
+[[package]]
+name = "spark-parser"
+version = "1.8.9"
+description = "An Earley-Algorithm Context-free grammar Parser Toolkit"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+click = "*"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
+
+[[package]]
+name = "tinyaes"
+version = "1.0.3"
+description = "tiny-AES-c wrapper in Cython"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
+
+[[package]]
+name = "uncompyle6"
+version = "3.8.0"
+description = "Python cross-version byte-code decompiler"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+spark-parser = ">=1.8.9,<1.9.0"
+xdis = ">=6.0.2,<6.1.0"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
+
+[[package]]
+name = "xdis"
+version = "6.0.4"
+description = "Python cross-version byte-code disassembler and marshal routines"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+click = "*"
+six = ">=1.10.0"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = "aliyun"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.8,<3.11"
+content-hash = "16b1bcf1ee7aabb15cee23cc2a7f3b6909ed7f12f5006886db596798aebb0d59"
+
+[metadata.files]
+altgraph = [
+    {file = "altgraph-0.17.2-py2.py3-none-any.whl", hash = "sha256:743628f2ac6a7c26f5d9223c91ed8ecbba535f506f4b6f558885a8a56a105857"},
+    {file = "altgraph-0.17.2.tar.gz", hash = "sha256:ebf2269361b47d97b3b88e696439f6e4cbc607c17c51feb1754f90fb79839158"},
+]
+click = [
+    {file = "click-8.1.3-py3-none-any.whl", hash = "sha256:bb4d8133cb15a609f44e8213d9b391b0809795062913b383c62be0ee95b1db48"},
+    {file = "click-8.1.3.tar.gz", hash = "sha256:7682dc8afb30297001674575ea00d1814d808d6a36af415a82bd481d37ba7b8e"},
+]
+colorama = [
+    {file = "colorama-0.4.5-py2.py3-none-any.whl", hash = "sha256:854bf444933e37f5824ae7bfc1e98d5bce2ebe4160d46b5edf346a89358e99da"},
+    {file = "colorama-0.4.5.tar.gz", hash = "sha256:e6c6b4334fc50988a639d9b98aa429a0b57da6e17b9a44f0451f930b6967b7a4"},
+]
+future = [
+    {file = "future-0.18.2.tar.gz", hash = "sha256:b1bead90b70cf6ec3f0710ae53a525360fa360d306a86583adc6bf83a4db537d"},
+]
+macholib = [
+    {file = "macholib-1.16-py2.py3-none-any.whl", hash = "sha256:5a0742b587e6e57bfade1ab90651d4877185bf66fd4a176a488116de36878229"},
+    {file = "macholib-1.16.tar.gz", hash = "sha256:001bf281279b986a66d7821790d734e61150d52f40c080899df8fefae056e9f7"},
+]
+pefile = [
+    {file = "pefile-2022.5.30.tar.gz", hash = "sha256:a5488a3dd1fd021ce33f969780b88fe0f7eebb76eb20996d7318f307612a045b"},
+]
+pyarmor = [
+    {file = "pyarmor-7.5.1-py2.py3-none-any.whl", hash = "sha256:03f256d22c08849109858976918c7ed5b40fb27c6e30743c27b3d72764a8b909"},
+    {file = "pyarmor-7.5.1.zip", hash = "sha256:efb69100aa565d8bc45e84bc811550749bb10b289a6068dd3fa635edc5202110"},
+]
+pyinstaller = [
+    {file = "pyinstaller-5.1-py3-none-macosx_10_13_universal2.whl", hash = "sha256:3c9bc373b4a4bf6d81b306b9918e290a3de582d7b50a0f6f4e837970a4db0c54"},
+    {file = "pyinstaller-5.1-py3-none-manylinux2014_aarch64.whl", hash = "sha256:ac003d49bbd62f6712b5631487049cee4f0a07445dd31c6d05e5724e33689fca"},
+    {file = "pyinstaller-5.1-py3-none-manylinux2014_i686.whl", hash = "sha256:f786cb013ebfd3fb23ddb46285902663e31256220b12b368f8c36e859a77ebc9"},
+    {file = "pyinstaller-5.1-py3-none-manylinux2014_ppc64le.whl", hash = "sha256:d8bfe5c32b4b5aaa91a5c1c7912fe3e5d13e7671f3468ee7742ec71ca192a975"},
+    {file = "pyinstaller-5.1-py3-none-manylinux2014_s390x.whl", hash = "sha256:c421b46ebf81ad4498de480640ce1a47ac15dfd3938dfc2e1c0846cb5cdb0c59"},
+    {file = "pyinstaller-5.1-py3-none-manylinux2014_x86_64.whl", hash = "sha256:588f2840c27a8a7e1b1fa361f107a1060c5096b36d3c94c243b23687ee41609d"},
+    {file = "pyinstaller-5.1-py3-none-musllinux_1_1_aarch64.whl", hash = "sha256:d3852c1f8fe6ca2f5c7942c845dc6d1f6140aa7860fe3500eac3ac88875d1dd4"},
+    {file = "pyinstaller-5.1-py3-none-musllinux_1_1_x86_64.whl", hash = "sha256:29b3f17d75ff58b12db7b0116df1b3382c8345aefd500a177987eaf0599dec03"},
+    {file = "pyinstaller-5.1-py3-none-win32.whl", hash = "sha256:a90ee3181c88aed0893bf537a50ad547655f5d555a5b731215a5fe1946d2f3db"},
+    {file = "pyinstaller-5.1-py3-none-win_amd64.whl", hash = "sha256:996e296d1dfe27c3e89efc26dbcc247f49c0801a9b5e22e2b39f5b983cf5c2f5"},
+    {file = "pyinstaller-5.1.tar.gz", hash = "sha256:9596c70c860cbce19537354db95b180351959b4cd14a70db6ab1d1432668c313"},
+]
+pyinstaller-hooks-contrib = [
+    {file = "pyinstaller-hooks-contrib-2022.7.tar.gz", hash = "sha256:6675634279cfe9e475580fb310c3d557037baefb065e6cb5a69a124361b926fd"},
+    {file = "pyinstaller_hooks_contrib-2022.7-py2.py3-none-any.whl", hash = "sha256:5fdb97dcae177955db7ab27840cba97b89dc0c7f4fd9142bba0f9b8d8df85c48"},
+]
+pyside6 = [
+    {file = "PySide6-6.3.1-cp36-abi3-macosx_10_9_universal2.whl", hash = "sha256:58b824cb41d549a149a17786326f79a2fa46a1ce94e06397e78ea5707757b052"},
+    {file = "PySide6-6.3.1-cp36-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:bc749968d641af1c516b6b0e00264bffea9cfc2d56dc04766f36e1a313e93a3a"},
+    {file = "PySide6-6.3.1-cp36-abi3-win_amd64.whl", hash = "sha256:947185379c181d5e51b7b6bf2df8d8127c675ea57604d41265c67444d226db26"},
+]
+pyside6-addons = [
+    {file = "PySide6_Addons-6.3.1-cp36-abi3-macosx_10_9_universal2.whl", hash = "sha256:7a6bb180e41a4c599aa0e93d11e60570d0ebc79c197afccd9c227566dad5d5ef"},
+    {file = "PySide6_Addons-6.3.1-cp36-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:14f4171b15dbdd7d120dc125c84f2eca53bc197182295bfdfdb3bb95b58a46c7"},
+    {file = "PySide6_Addons-6.3.1-cp36-abi3-win_amd64.whl", hash = "sha256:9a933fac75c85bea3a9e31b24926e06b1afebae23cd164f10f2001999ea2692c"},
+]
+pyside6-essentials = [
+    {file = "PySide6_Essentials-6.3.1-cp36-abi3-macosx_10_9_universal2.whl", hash = "sha256:55696693325a2de7bf5b56274b534f191032d218d61a948baa95933f6e642e59"},
+    {file = "PySide6_Essentials-6.3.1-cp36-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:e27962beb2cc45fe13a1a1c24a454c3c3c3c3082c4a84bc5dcf6b306979ba013"},
+    {file = "PySide6_Essentials-6.3.1-cp36-abi3-win_amd64.whl", hash = "sha256:fa825c5396a5dfedf59635e904239187e2f2225c7f65917d4e973062c9a6b916"},
+]
+pywin32-ctypes = [
+    {file = "pywin32-ctypes-0.2.0.tar.gz", hash = "sha256:24ffc3b341d457d48e8922352130cf2644024a4ff09762a2261fd34c36ee5942"},
+    {file = "pywin32_ctypes-0.2.0-py2.py3-none-any.whl", hash = "sha256:9dc2d991b3479cc2df15930958b674a48a227d5361d413827a4cfd0b5876fc98"},
+]
+shiboken6 = [
+    {file = "shiboken6-6.3.1-cp36-abi3-macosx_10_9_universal2.whl", hash = "sha256:6393aa330101b098631a88dfb99b6b46794046c7f63b5c1ac93ae2fcef4773ff"},
+    {file = "shiboken6-6.3.1-cp36-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:aad9aa8e7ecd3c889cc789e41abf3990101126b5b02edfcf87f1ef331c9dc45a"},
+    {file = "shiboken6-6.3.1-cp36-abi3-win_amd64.whl", hash = "sha256:cb9cf4ad858e59237642bf6b8be1fe6f19cb090799ff00e4c2643768d73e8ebe"},
+]
+six = [
+    {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
+    {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
+]
+spark-parser = [
+    {file = "spark_parser-1.8.9-py2-none-any.whl", hash = "sha256:ea9c25fa79206f23b2b4c233edf5ce9c17edc97b4f39a70056b31f50a2166cce"},
+    {file = "spark_parser-1.8.9-py26-none-any.whl", hash = "sha256:0a6293d05e30a093273bf81eebb97443cb4b8e733c71ad6cc2b6a223b80f3aeb"},
+    {file = "spark_parser-1.8.9-py3-none-any.whl", hash = "sha256:e4d366116268010100f054ebda99b3b880c64e4b0aa3d58629ec79e6d033b077"},
+    {file = "spark_parser-1.8.9-py38-none-any.whl", hash = "sha256:0a96852dacfbe3a267bba6c9ebc1fcab8904158a5045107267e310e8d18919e5"},
+    {file = "spark_parser-1.8.9.tar.gz", hash = "sha256:a7bb97b97953fb8bf0cd8158d820b6467ef1e7f747738e82248ae4c824f1e25a"},
+]
+tinyaes = [
+    {file = "tinyaes-1.0.3-cp27-cp27m-macosx_10_14_x86_64.whl", hash = "sha256:bc1d1c010d573992ec4318f903cc3cb21fad810ba164c12189838c294a33aa99"},
+    {file = "tinyaes-1.0.3-cp310-cp310-macosx_10_15_x86_64.whl", hash = "sha256:8fe3c57f7a5285b450d973ae08f0c5f7061aee8ffa9991a48b179f596685982d"},
+    {file = "tinyaes-1.0.3-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:96426b43d54c6e82e1608b4d59572960f79e69e7eca6c35f2fdff1c227571102"},
+    {file = "tinyaes-1.0.3-cp310-cp310-win_amd64.whl", hash = "sha256:0d98c58fa4a319946bd49bf2cf419a389cda03a81897d1d3049b8677160b7e26"},
+    {file = "tinyaes-1.0.3-cp36-cp36m-macosx_10_14_x86_64.whl", hash = "sha256:c16bbb59ae19923f3ce1c59bb76f6cfc4cd04d839781e2d9530b9ddd6e932b53"},
+    {file = "tinyaes-1.0.3-cp36-cp36m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:d1da12f0e0dfe9d33e3a5695cb93fecf9b8cf62dee4545bd6916560d083b890a"},
+    {file = "tinyaes-1.0.3-cp36-cp36m-win_amd64.whl", hash = "sha256:c8031e86e5b61c588065059dbb145cf1d9be18101457ecf3c2e44cf08350aedd"},
+    {file = "tinyaes-1.0.3-cp37-cp37m-macosx_10_14_x86_64.whl", hash = "sha256:1bedd0d98eaab077f40d36e4ce1385aa8dc6ce98e31fdab2ffaaddeeb5dd31e1"},
+    {file = "tinyaes-1.0.3-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:d82f8c9cc2c6873fb0f378dca3f3f229503810d43fbb2b49ea04a4bfe279ec11"},
+    {file = "tinyaes-1.0.3-cp37-cp37m-win_amd64.whl", hash = "sha256:153aa6d1ff0fe975b2c67f5afae9c4441a9ec273e117660b66b2cb7e0e7d40dc"},
+    {file = "tinyaes-1.0.3-cp38-cp38-macosx_10_14_x86_64.whl", hash = "sha256:7648934dbf3a85bac77b987835ee1618471aa2981c1cb4faf6543db755ed2276"},
+    {file = "tinyaes-1.0.3-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:91d849ed324c0439123c90f7782d15d3cedb79b8ee41efd2a89b288c477c1c00"},
+    {file = "tinyaes-1.0.3-cp38-cp38-win_amd64.whl", hash = "sha256:63c09e50884f01188e27560364d54ca1f1f52c9af479e494d22afc5e66eb35fe"},
+    {file = "tinyaes-1.0.3-cp39-cp39-macosx_10_15_x86_64.whl", hash = "sha256:7f031fa88e9eda770d7017cb3539364893879b29d9e0247ce68b5e5d843734ae"},
+    {file = "tinyaes-1.0.3-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:e563ef2caa4916c02566d97c4ecdd89a572f15b7b1b09282e71899be7e985794"},
+    {file = "tinyaes-1.0.3-cp39-cp39-win_amd64.whl", hash = "sha256:cbf0f35cd6999975f7c9b0af9c045180b4f7e83afb47d4807449973ee5596978"},
+    {file = "tinyaes-1.0.3.tar.gz", hash = "sha256:4655f32282b13a3241a8087b984909855a99772a9c0d8dfcce740c76e5085ddc"},
+]
+uncompyle6 = [
+    {file = "uncompyle6-3.8.0-py2-none-any.whl", hash = "sha256:0314d5558a15a47d00e61b88cc1b7631717de3edc19262643ed3b581ab910396"},
+    {file = "uncompyle6-3.8.0-py310-none-any.whl", hash = "sha256:157261cb0b0cc91691d3795c375ea35c0d105c83ee4493ef6194f8db703c3052"},
+    {file = "uncompyle6-3.8.0-py33-none-any.whl", hash = "sha256:e0f57660972ef11a4c1da5d23ac0fe19f8ab73b73065d2a0200d71df8580dfc9"},
+    {file = "uncompyle6-3.8.0-py34-none-any.whl", hash = "sha256:a1cfd8add1e38779033dcee245f03e0c9187a75b71d83b0200a1cc1b1bc5d535"},
+    {file = "uncompyle6-3.8.0-py35-none-any.whl", hash = "sha256:7017cda7b9f1e8123899a7b7eda9a555c0ea2c7dfc7805322e7b87b3b36504e5"},
+    {file = "uncompyle6-3.8.0-py36-none-any.whl", hash = "sha256:2792b10d5ef1fe15aaf8a6240a9fd38934bdf9648362367f5bbefa87eb1525e2"},
+    {file = "uncompyle6-3.8.0-py37-none-any.whl", hash = "sha256:368f0efc3c41f0415a19e9cceee2311fb08899ab765a2113471be03a6857127e"},
+    {file = "uncompyle6-3.8.0-py38-none-any.whl", hash = "sha256:1b99fd5634baadaeb4ed4fe9b724ae056b5a2a62ee94d143425c8bfc7e7ee869"},
+    {file = "uncompyle6-3.8.0-py39-none-any.whl", hash = "sha256:c8f3efea49f38d1f5c9cc1cc4771df68c96beca7df1ac6f8251eda73fc63c38b"},
+    {file = "uncompyle6-3.8.0.tar.gz", hash = "sha256:620633618f6dfc1f3e78187e220934d78ffc639c0e39daeca1fc535aab817014"},
+]
+xdis = [
+    {file = "xdis-6.0.4-py2-none-any.whl", hash = "sha256:e94f10448fbbde1ab4aea753275def610e599c02eb3b2ffd3e9bee87f93cef8a"},
+    {file = "xdis-6.0.4-py310-none-any.whl", hash = "sha256:288ad36acd198dd6c9dfe5d7c3555ff653280558ee752438dccb4cc63285e024"},
+    {file = "xdis-6.0.4-py33-none-any.whl", hash = "sha256:c8d43a7d323dcfaf74ae41d9030ed21c64e8d9df367fb489304e1db6e65cfd95"},
+    {file = "xdis-6.0.4-py34-none-any.whl", hash = "sha256:d85694b944b2abb389ce6483995bb43accbf1fce34fcc88a29767886097b29d2"},
+    {file = "xdis-6.0.4-py35-none-any.whl", hash = "sha256:6911e4f2f69367846e6ae9ea3a13c130590d760b0cc5680bd4ccbdfa5a52f324"},
+    {file = "xdis-6.0.4-py36-none-any.whl", hash = "sha256:1fd4eb936c21e1bae641f194601f31801c2b6fcb7d7dfe8eb791d2ca8626b32a"},
+    {file = "xdis-6.0.4-py37-none-any.whl", hash = "sha256:6e58aad4a115636f7bcd91e77c4220bd7a135a2770ca3400c394f6db11fb72e7"},
+    {file = "xdis-6.0.4-py38-none-any.whl", hash = "sha256:18f91849ced2b0786bf196e65520e42384ce71cc6980caa55f12c2b0fbd73115"},
+    {file = "xdis-6.0.4.tar.gz", hash = "sha256:1bc5453cfa0ea8331f5bdf6ddba53f50b8289ac368d9fddb135cbbdf42aeffb8"},
+]
