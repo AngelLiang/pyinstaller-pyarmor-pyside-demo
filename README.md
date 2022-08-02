@@ -12,7 +12,8 @@
 
 ## 说明
 
-使用pyinstaller和pyarmor加密打包python，以pyside6为例。
+使用pyinstaller和pyarmor代码混淆打包python，以pyside6为例。
+
 
 打包后再使用 pyinstxtractor.py 和 uncompyle6 进行反编译检查是否加密，可以看到反编译出来的pyc文件是加密后的文件。
 
