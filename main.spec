@@ -50,7 +50,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    # 二进制文件名称
+    # 打包后的文件名称
     name=APP_NAME,
     debug=False,
     bootloader_ignore_signals=False,
@@ -58,6 +58,7 @@ exe = EXE(
     upx=True,
     upx_exclude=[],
     runtime_tmpdir=None,
+    # 不显示控制台
     console=False,
     disable_windowed_traceback=False,
     argv_emulation=False,
