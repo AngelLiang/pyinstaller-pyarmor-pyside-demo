@@ -31,7 +31,8 @@ pyinstxtractor.py 会报错
 
 ## 生成.spec文件
 
-    pyinstaller src/main.py
+    # -F 表示打包成一个文件
+    pyinstaller -F src/main.py
 
 ## 普通打包
 
