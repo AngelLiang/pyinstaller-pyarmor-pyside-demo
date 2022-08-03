@@ -46,6 +46,7 @@ pyz = PYZ(a.pure, a.zipped_data, cipher=block_cipher)
 exe = EXE(
     pyz,
     a.scripts,
+    # 把二进制文件，压缩包文件，数据文件也打包进去
     a.binaries,
     a.zipfiles,
     a.datas,
@@ -57,6 +58,7 @@ exe = EXE(
     strip=False,
     upx=True,
     upx_exclude=[],
+    # 运行临时目录
     runtime_tmpdir=None,
     # 不显示控制台
     console=False,
