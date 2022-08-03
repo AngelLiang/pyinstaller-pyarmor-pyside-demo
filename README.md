@@ -29,8 +29,21 @@ pyinstxtractor.py 会报错
 [!] Error: Failed to decompress XXX.pyc, probably encrypted. Extracting as is.
 ```
 
+## 生成.spec文件
+
+    pyinstaller src/main.py
+
+## 普通打包
+
+    pyinstaller main.spec --clean
+
+### 创建pyarmor初始化配置
+
+    pyarmor init --src src --entry .\src\main.py
+
 ## 加密打包
 
+    # -x " -r" 表示使 pyarmor 递归加密
     pyarmor pack -s main.spec src/main.py --clean -x " -r"
 
 ## 代码提取
