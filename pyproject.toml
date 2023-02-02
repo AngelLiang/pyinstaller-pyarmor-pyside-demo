@@ -10,7 +10,7 @@ url = "https://mirrors.aliyun.com/pypi/simple/"
 
 [tool.poetry.dependencies]
 python = "^3.8,<3.11"
-pyinstaller = {extras = ["encryption"], version = "^5.1"}
+pyinstaller = {version = "5.3", extras = ["encryption"]}
 pyarmor = "^7.5.1"
 PySide6 = "^6.3.1"
 uncompyle6 = "^3.8.0"
