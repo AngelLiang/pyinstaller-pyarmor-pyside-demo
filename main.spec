@@ -2,8 +2,10 @@
 import os
 import glob
 
-APP_NAME = 'pyinstaller-pyarmorpyside-demo'
-ICON_PATH = None
+from src.config import APP_NAME
+
+# APP_NAME = 'pyinstaller-pyarmorpyside-demo'
+ICON_PATH = 'icon.ico'
 
 
 def get_all_pyfile():
@@ -17,7 +19,7 @@ block_cipher = pyi_crypto.PyiBlockCipher(key='your key')
 
 # 需要一起打包的资源文件
 added_files = [
-    # ('src/icon.svg', '.'),
+    ('icon.ico', '.'),
 ]
 
 a = Analysis(
