@@ -21,6 +21,8 @@ block_cipher = pyi_crypto.PyiBlockCipher(key='your key')
 added_files = [
     # 资源路径, 要存放的文件夹
     ('icon.ico', '.'),
+    # 资源文件夹, 存放的文件夹
+    ('static', 'static'),
 ]
 
 a = Analysis(
