@@ -19,6 +19,7 @@ block_cipher = pyi_crypto.PyiBlockCipher(key='your key')
 
 # 需要一起打包的资源文件
 added_files = [
+    # 资源路径, 要存放的文件夹
     ('icon.ico', '.'),
 ]
 
