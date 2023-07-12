@@ -10,6 +10,13 @@
 - pyarmor 7.5.1
 - pyside6 6.3.1
 
+## 安装
+
+```
+pip install pyinstaller[encryption]
+pip install pyarmor<8.0
+```
+
 ## 说明
 
 使用pyinstaller和pyarmor代码混淆打包python，以pyside6为例。
