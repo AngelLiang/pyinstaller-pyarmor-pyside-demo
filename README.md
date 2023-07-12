@@ -61,3 +61,13 @@ pyinstxtractor.py 会报错
 ## 反编译
 
     uncompyle6 pyinstaller-pyarmorpyside-demo.exe_extracted\main.pyc > main.pyc
+
+## 注意事项
+
+pyarmor免费版打包有大小限制，文件不能超过32768字节，如果超过则报错：
+
+```
+Too big code object, the limitation is 32768 bytes in trial version 
+```
+
+参见：https://github.com/dashingsoft/pyarmor/issues/790
